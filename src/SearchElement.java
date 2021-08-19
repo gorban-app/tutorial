@@ -18,4 +18,14 @@ public class SearchElement {
         Arrays.sort(arrays);
         System.out.println(arrays[0]);
     }
+    
+    // Finding Duplicate Items in an Array
+    
+        for (int i = 0; i < arrays.length; i++) {
+            for (int j = i+1; j < arrays.length; j++)
+            if(arrays[i] == arrays[j]) {
+                System.out.print(arrays[i] + " ");
+            }
+
+        }
 }
